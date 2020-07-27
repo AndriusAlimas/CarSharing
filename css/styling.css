@@ -1,0 +1,318 @@
+html{
+  position: relative;
+  min-height: 100%;    
+}
+
+/*background Image*/
+body{
+    background: url("../images/RoadBackground.jpg")no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+   	font-family: 'Chelsea Market', cursive;
+	color: black;
+}
+
+#myContainer{
+	margin-top: 50px;
+	text-align: center;
+}
+
+#myContainer p{
+	color:lightyellow;
+	font-size: 1.2em;
+}
+
+h1{
+	font-size: 4em;
+	color: khaki;
+}
+
+h2{
+	color: blanchedalmond;
+}
+
+#googleMap{
+	width: 100%;
+	height: 33vh;
+	margin: 10px auto;
+}
+
+/* buttons */
+.signup{
+    margin: 25px auto;
+}
+
+.green{
+    background-color: rgba(114,190,35,0.8);
+}
+.green:hover{
+    background-color: rgb(114,190,35);
+}
+
+/*style profile picture*/
+.preview{
+	height: 20px;
+	border-radius: 50%;
+}
+
+/* Style the footer */
+.footer{
+	position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+}
+
+/*for radio buttons */
+.radio-inline {
+width: 85px;
+}
+
+/*for check boxses */
+.checkbox-inline{
+	width: 500px;
+	
+}
+
+/*fix the form modal  google autocomplete boxes to be visible*/
+.navbar {
+	z-index: 5;
+}
+
+.modal{
+	z-index: 8;
+}
+
+
+.modal-backdrop{
+	z-index: 6;
+}
+
+#googleMap{
+	width: 100%;
+	height: 250px;
+	margin: 30px auto;
+}
+
+/*style load trips boxses*/
+.trip{
+
+	border: 1px solid grey;
+	padding: 10px;
+	border-radius: 15px;
+	margin: 46px auto;
+	background: linear-gradient(#ECE9E6,#FFFFFF);
+	
+}
+
+.departure, .destination {
+	font-size: 1.5em;
+}
+
+.price {
+	font-size: 1.9em;
+}
+
+.seatsAvailable{
+	font-size: 1.6em;
+}
+
+.noresults{
+	text-align: center;
+}
+
+
+/*styling search results in index.php */
+.journeySummary, .noresults{
+	text-align: left;
+	font-size: 1.3em;
+}
+
+/* main search container */
+#searchResults{
+	margin-bottom: 100px;
+	margin-top: 20px;
+}
+
+/*style driver section*/
+.driver{
+	font-size: 1.2em;
+	text-transform: capitalize;
+}
+
+.moreInfo{
+	text-align: left;
+}
+
+.aboutMe{
+	border-top: 1px solid grey;
+	margin-top: 15px;
+	padding-top: 5px;
+}
+
+/*profile picture*/
+.profilePic{
+	height: auto;
+	max-width: 100%;
+	border-radius: 50%;
+}
+
+.departure, .destination{
+	font-size: 1.1em;
+	
+}
+
+.price{
+	font-size: 2.2em;
+}
+
+.perSeat{
+	font-size: 0.7em;
+}
+
+.seatsAvailable{
+	font-size: 0.9em;
+}
+
+.journey{
+	text-align: left;
+}
+
+.time{
+	margin-top: 10px;
+}
+
+.journey2{
+	text-align: right;
+}
+
+/*style spinner image*/
+#spinner{
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 85px;
+	margin: auto;
+	text-align: center;
+	z-index: 100;
+}
+
+/* Navigation bar plus footer */
+.navbar-custom, .footer {
+  background-color: #51a2b4;
+  border-color: #458f9f;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#75b5c3), to(#51a2b4));
+  background-image: -webkit-linear-gradient(top, #75b5c3, 0%, #51a2b4, 100%);
+  background-image: -moz-linear-gradient(top, #75b5c3 0%, #51a2b4 100%);
+  background-image: linear-gradient(to bottom, #75b5c3 0%, #51a2b4 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff75b5c3', endColorstr='#ff51a2b4', GradientType=0);
+}
+.navbar-custom .navbar-brand {
+  color: #ffffff;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #e6e6e6;
+  background-color: transparent;
+}
+.navbar-custom .navbar-text {
+  color: #ffffff;
+}
+.navbar-custom .navbar-nav > li:last-child > a {
+  border-right: 1px solid #458f9f;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #ffffff;
+  border-left: 1px solid #458f9f;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #c0c0c0;
+  background-color: transparent;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: #c0c0c0;
+  background-color: #458f9f;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#458f9f), to(#5da9b9));
+  background-image: -webkit-linear-gradient(top, #458f9f, 0%, #5da9b9, 100%);
+  background-image: -moz-linear-gradient(top, #458f9f 0%, #5da9b9 100%);
+  background-image: linear-gradient(to bottom, #458f9f 0%, #5da9b9 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff458f9f', endColorstr='#ff5da9b9', GradientType=0);
+}
+.navbar-custom .navbar-nav > .disabled > a,
+.navbar-custom .navbar-nav > .disabled > a:hover,
+.navbar-custom .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+.navbar-custom .navbar-toggle {
+  border-color: #dddddd;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #dddddd;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #cccccc;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+  border-color: #448d9d;
+}
+.navbar-custom .navbar-nav > .dropdown > a:hover .caret,
+.navbar-custom .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #c0c0c0;
+  border-bottom-color: #c0c0c0;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  background-color: #458f9f;
+  color: #c0c0c0;
+}
+.navbar-custom .navbar-nav > .open > a .caret,
+.navbar-custom .navbar-nav > .open > a:hover .caret,
+.navbar-custom .navbar-nav > .open > a:focus .caret {
+  border-top-color: #c0c0c0;
+  border-bottom-color: #c0c0c0;
+}
+.navbar-custom .navbar-nav > .dropdown > a .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+@media (max-width: 767) {
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #c0c0c0;
+    background-color: transparent;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #c0c0c0;
+    background-color: #458f9f;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #cccccc;
+    background-color: transparent;
+  }
+}
+.navbar-custom .navbar-link {
+  color: #ffffff;
+}
+.navbar-custom .navbar-link:hover {
+  color: #c0c0c0;
+}
